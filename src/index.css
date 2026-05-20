@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Shanti&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-kopub: "KoPubBatang", sans-serif;
+  --font-carme: "Carme", sans-serif;
+  --font-shanti: "Shanti", sans-serif;
+}
