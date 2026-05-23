@@ -6,6 +6,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BouquetCollection from "./components/BouquetCollection";
+import FlowerStory from "./components/FlowerStory";
+import FloralCatalog from "./components/FloralCatalog";
 
 const App = () => {
   return (
@@ -17,9 +19,14 @@ const App = () => {
         <section id="home">
           <Hero />
         </section>
-
         <section id="bouquet">
           <BouquetCollection />
+        </section>
+        {/* <section id="story">
+          <FlowerStory />
+        </section> */}
+        <section id="floral">
+          <FloralCatalog />
         </section>
         {/* About Section */}
         {/* <section id="about">
