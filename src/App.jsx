@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import BouquetCollection from "./components/BouquetCollection";
 import FlowerStory from "./components/FlowerStory";
 import FloralCatalog from "./components/FloralCatalog";
+import DiscountBanner from "./components/DiscountBanner";
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
         </section> */}
         <section id="floral">
           <FloralCatalog />
+        </section>
+        <section id="discount">
+          <DiscountBanner />
         </section>
         {/* About Section */}
         {/* <section id="about">
