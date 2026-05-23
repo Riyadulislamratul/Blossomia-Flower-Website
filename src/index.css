@@ -1,8 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Carme&family=Shanti&display=swap');
 @import "tailwindcss";
 
+
+
+@utility container {
+  margin-inline: auto;
+}
+
+
 @theme {
   --font-kopub: "KoPubBatang", sans-serif;
   --font-carme: "Carme", sans-serif;
   --font-shanti: "Shanti", sans-serif;
+  
+  /* breakpoints */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 75rem;
+
+  /* colors */
+  --color-primary: #F8F3EC;
+  --color-secondary: #DBCCBA;
+  --color-text: #2C2C2C;
+
+
 }

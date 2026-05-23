@@ -1,9 +1,41 @@
-import React from 'react'
+import React from "react";
+
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import BouquetCollection from "./components/BouquetCollection";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="scroll-smooth">
+      <Header />
 
-export default App
+      <main>
+        {/* Hero Section */}
+        <section id="home">
+          <Hero />
+        </section>
+
+        {/* About Section */}
+        {/* <section id="about">
+          <About />
+        </section> */}
+
+        {/* Contact Section */}
+        {/* <section id="contact">
+          <Contact />
+        </section> */}
+        <section id="bouquet">
+          <BouquetCollection />
+        </section>
+
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
