@@ -134,9 +134,11 @@ const Hero = () => {
               className="
                 relative
                 w-full
-                max-w-[500px]
+                max-w-[600px]
                 lg:w-[587px]
                 lg:h-[565px]
+                xl:h-[550px]
+                xl:w-[600px]
                 overflow-hidden
               "
             >

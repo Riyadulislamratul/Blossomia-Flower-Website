@@ -18,6 +18,9 @@ const App = () => {
           <Hero />
         </section>
 
+        <section id="bouquet">
+          <BouquetCollection />
+        </section>
         {/* About Section */}
         {/* <section id="about">
           <About />
@@ -26,9 +29,6 @@ const App = () => {
         {/* Contact Section */}
         {/* <section id="contact">
           <Contact />
-        </section> */}
-        {/* <section id="bouquet">
-          <BouquetCollection />
         </section> */}
 
       </main>

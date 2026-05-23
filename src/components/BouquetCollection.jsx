@@ -6,11 +6,13 @@ import { ArrowRight } from "lucide-react";
 
 const BouquetCollection = () => {
   return (
-    <section className="bg-[#f5f1eb] py-24">
+    <section className="bg-[#f5f1eb] py-16 lg:py-24 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-16 items-start">
+          
           {/* Left Side */}
           <div>
+            
             {/* Large Image */}
             <div className="overflow-hidden">
               <img
@@ -21,17 +23,18 @@ const BouquetCollection = () => {
             </div>
 
             {/* Info */}
-            <div className="flex items-center justify-between mt-3 text-sm">
-              <h3 className="font-regular font-kopub text-text text-[18px]">
+            <div className="flex items-center justify-between gap-4 mt-4 text-sm flex-wrap">
+              <h3 className="font-regular font-kopub text-text text-[16px] sm:text-[18px]">
                 Whispering Blooms
               </h3>
-              <span className="font-regular font-kopub text-text text-[18px]">
+
+              <span className="font-regular font-kopub text-text text-[16px] sm:text-[18px]">
                 from 50 Euro
               </span>
             </div>
 
             {/* Description */}
-            <p className="mt-10 font-carme text-text text-[17px]">
+            <p className="mt-8 lg:mt-10 font-carme text-text text-[16px] sm:text-[17px] leading-7">
               At Our Store, we take pride in offering a stunning selection of
               the most popular flowers that capture hearts and inspire joy.
               Explore our floral paradise and discover the timeless beauty of
@@ -43,13 +46,29 @@ const BouquetCollection = () => {
           </div>
 
           {/* Right Side */}
-          <div className="mt-10">
-            <h2 className="text-[42px] md:text-[56px] xl:text-[60px] font-kopub font-light text-text w-[700px]">
+          <div className="mt-2 lg:mt-10">
+            
+            {/* Heading */}
+            <h2
+              className="
+                text-[36px]
+                sm:text-[46px]
+                md:text-[56px]
+                xl:text-[60px]
+                font-kopub
+                font-light
+                text-text
+                w-full
+                lg:w-[700px]
+                leading-[1.1]
+              "
+            >
               Unveiling Our Popular Bouquet Collection
             </h2>
 
             {/* Cards */}
-            <div className="flex justify-between gap-6 mt-21.75">
+            <div className="grid sm:grid-cols-2 gap-6 mt-12 lg:mt-[87px]">
+              
               {/* Card 1 */}
               <div>
                 <div className="overflow-hidden">
@@ -60,9 +79,14 @@ const BouquetCollection = () => {
                   />
                 </div>
 
-                <div className="flex items-center justify-between mt-3 text-sm">
-                  <h4>Enchanted Petals</h4>
-                  <span>from 70 Euro</span>
+                <div className="flex items-center justify-between gap-4 mt-3 text-sm flex-wrap">
+                  <h4 className="text-[15px] sm:text-base">
+                    Enchanted Petals
+                  </h4>
+
+                  <span className="text-[15px] sm:text-base">
+                    from 70 Euro
+                  </span>
                 </div>
               </div>
 
@@ -76,9 +100,14 @@ const BouquetCollection = () => {
                   />
                 </div>
 
-                <div className="flex items-center justify-between mt-3 text-sm">
-                  <h4>Harmony Bouquet</h4>
-                  <span>from 40 Euro</span>
+                <div className="flex items-center justify-between gap-4 mt-3 text-sm flex-wrap">
+                  <h4 className="text-[15px] sm:text-base">
+                    Harmony Bouquet
+                  </h4>
+
+                  <span className="text-[15px] sm:text-base">
+                    from 40 Euro
+                  </span>
                 </div>
               </div>
             </div>
@@ -93,11 +122,34 @@ export default BouquetCollection;
 
 export const Button = ({ text }) => {
   return (
-    <button className="mt-10 border  cursor-pointer border-[#DBCCBA] border font-kopub bg-transparent px-2.5 py-3 text-sm hover:text-white transition-all duration-300">
-      <div className="flex items-center gap-3  bg-[#DBCCBA]">
+    <button
+      className="
+        mt-8 lg:mt-10
+        border
+        cursor-pointer
+        border-[#DBCCBA]
+        font-kopub
+        bg-transparent
+        px-2.5
+        py-3
+        text-sm
+        hover:text-white
+        transition-all
+        duration-300
+        group
+      "
+    >
+      <div className="flex items-center gap-3 bg-[#DBCCBA]">
         <div className="flex items-center gap-3 pr-2">
-          <p className="py-3 px-5.5">{text}</p>
-          <ArrowRight size={19} strokeWidth={0.5} />
+          <p className="py-3 px-4 sm:px-5.5">
+            {text}
+          </p>
+
+          <ArrowRight
+            size={19}
+            strokeWidth={0.5}
+            className="group-hover:translate-x-1 transition-transform duration-300"
+          />
         </div>
       </div>
     </button>
