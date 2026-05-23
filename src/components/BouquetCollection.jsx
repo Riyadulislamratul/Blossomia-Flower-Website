@@ -93,10 +93,10 @@ export default BouquetCollection;
 
 export const Button = ({ text }) => {
   return (
-    <button className="mt-10 border  cursor-pointer border-[#DBCCBA] border font-kopub bg-transparent px-4 py-3 text-sm hover:text-white transition-all duration-300">
+    <button className="mt-10 border  cursor-pointer border-[#DBCCBA] border font-kopub bg-transparent px-2.5 py-3 text-sm hover:text-white transition-all duration-300">
       <div className="flex items-center gap-3  bg-[#DBCCBA]">
         <div className="flex items-center gap-3 pr-2">
-          <p className="py-3 px-4">{text}</p>
+          <p className="py-3 px-5.5">{text}</p>
           <ArrowRight size={19} strokeWidth={0.5} />
         </div>
       </div>
