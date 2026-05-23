@@ -12,7 +12,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full border-b border-[#d8d2cb] bg-[#f5f1eb] sticky top-0 z-50">
+    <header className="w-full bg-[#f5f1eb] sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
         
         {/* Left */}
@@ -31,7 +31,7 @@ const Header = () => {
           </button>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8 text-sm text-black">
+          <nav className="hidden lg:flex items-center gap-8 text-lg text-black">
             <a
               href="#about"
               className="hover:opacity-70 transition duration-300"
@@ -65,19 +65,19 @@ const Header = () => {
         {/* Right */}
         <div className="flex items-center gap-3 sm:gap-5 text-black">
           <button>
-            <Search size={18} strokeWidth={1.5} />
+            <Search size={22} strokeWidth={1.5} />
           </button>
 
           <button>
-            <Heart size={18} strokeWidth={1.5} />
+            <Heart size={22} strokeWidth={1.5} />
           </button>
 
           <button className="hidden sm:block">
-            <User size={18} strokeWidth={1.5} />
+            <User size={22} strokeWidth={1.5} />
           </button>
 
           <button>
-            <ShoppingCart size={18} strokeWidth={1.5} />
+            <ShoppingCart size={22} strokeWidth={1.5} />
           </button>
         </div>
       </div>

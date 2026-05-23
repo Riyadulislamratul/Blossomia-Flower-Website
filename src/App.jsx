@@ -27,9 +27,9 @@ const App = () => {
         {/* <section id="contact">
           <Contact />
         </section> */}
-        <section id="bouquet">
+        {/* <section id="bouquet">
           <BouquetCollection />
-        </section>
+        </section> */}
 
       </main>
 
